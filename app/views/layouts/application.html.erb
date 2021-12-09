@@ -16,6 +16,40 @@
   </head>
 
   <body>
+
+<nav>
+    <ul>
+      <li>
+        <a href="/">Home</a>
+      </li>
+
+
+      <li>
+        <a href="/listings">Listings</a>
+      </li>
+
+      <li>
+        <a href="/user_sign_in">Sign In</a>
+      </li>
+
+      <li>
+        <a href="/user_sign_up">Sign Up</a>
+      </li>
+
+      <li>
+        <a href="/user_sign_out">Sign Out</a>
+      </li>
+
+
+      <li>
+        <%= session.fetch(:user_id) %>
+      </li>
+
+    </ul>
+
+  </nav>
+
+
     <%= yield %>
   </body>
 </html>
